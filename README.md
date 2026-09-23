@@ -29,7 +29,7 @@ DTI --> preprocess_dti --> weighted structural connectome --> binarize_density -
 | `utils/binarize_density.m` | Shared binarization: keep the top percentage of edges |
 | `utils/` | Small helpers (resampling, nuisance regression, shell commands) |
 | `external/cspm_lmgs.m` | LMGS global signal removal, P. Macey (unmodified) |
-| 'docs/background-info/mri-background.md' | Useful background information on MRI machines |
+| `docs/background-info/mri-background.md` | Useful background information on MRI machines |
 
 
 ## Requirements
