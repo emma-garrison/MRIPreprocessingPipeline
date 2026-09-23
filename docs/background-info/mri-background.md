@@ -48,7 +48,7 @@ After an RF pulse, two independent relaxation processes occur:
   - **T2** — decay from spin-spin interactions alone, with field heterogeneity effects removed.
 
 > **[Figure: T2 vs. T2\* decay curves]**
-> `images/t2-curves.png`
+> `../t2-curves.png`
 > *Comparison of T2 and T2\* decay, showing the faster decline of T2\* due to magnetic field heterogeneity. Adapted from Denck (2022).*
 
 - T2\* effects are corrected with a **180° pulse**, which reverses spin positions so faster- and slower-decaying atoms realign.
@@ -71,7 +71,7 @@ A raw RF signal only reflects the *net* magnetization vector — all spatial inf
 | y | Phase Encoding Gradient | PEG |
 
 > **[Figure: Spin echo sequence timing diagram]**
-> `images/spin-echo.png`
+> `docs/background-info/spin-echo.png`
 > *RF pulses, SSG, FEG, and PEG timing for the spin echo sequence used in anatomical MRI (for fMRI/DTI coregistration). Adapted from Nel (2023).*
 
 - **SSG (z-axis):** Creates a magnetic field gradient along z, so only one slice has a Larmor frequency matching the RF pulse — that's the only slice that resonates and produces a signal. This is how a specific slice is selected.
@@ -120,7 +120,7 @@ This connects directly back to T2*: local field distortions from deoxygenated bl
 - This modified sequence is called the **echo planar sequence**.
 
 > **[Figure: Echo planar sequence timing diagram]**
-> `images/echo-planar.png`
+> `MRIPreprocessingPipeline/docs/background-info/echo-planar.png`
 > *RF pulses, SSG, FEG, and PEG timing for the echo planar sequence used in fMRI. Adapted from Nel (2023).*
 
 - Temporal resolution gains are usually worth the spatial trade-off, especially when fMRI data can be co-registered with a higher-resolution anatomical scan (from the spin echo sequence).
@@ -171,7 +171,7 @@ DTI uses a modified echo planar sequence that reintroduces the **180° pulse** a
 - Net effect: **less restricted movement along an axis → lower signal along that axis.** This is what lets DTI infer axon orientation from signal loss patterns.
 
 > **[Figure: Echo planar sequence timing diagram for DTI]**
-> `images/echo-planar-dti.png`
+> `docs/background-info/echo-planar-dti.png`
 > *RF pulses, SSG, FEG, PEG, and the diffusion gradient (DG) timing for the DTI echo planar sequence. Adapted from Nel (2023).*
 
 ## What DTI Actually Measures
